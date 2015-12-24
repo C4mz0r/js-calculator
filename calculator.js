@@ -14,14 +14,6 @@ function subtract(x, y) {
 	return x - y;
 }
 
-function evaluate(buffer) {
-	console.log("In evaluate, with buffer: " + buffer);
-	var stringBuffer = buffer.toString().replace(/,/g,'');
-	console.log("String buffer is " + stringBuffer);
-	//console.log(eval(stringBuffer));
-	return eval(stringBuffer);
-}
-
 function updateDisplay(buffer) {
 	$('.screen').text(buffer);
 }
