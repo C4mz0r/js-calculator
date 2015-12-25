@@ -180,7 +180,7 @@ describe "UI Tests" do
   end
   
   describe "Equal" do
-    it "should allow the user to update the operator that they have just pressed" do
+    it "should cause the current equation to be calculated" do
       browser.find_element(:id, "num1").click
       browser.find_element(:id, "add").click
       browser.find_element(:id, "num2").click
